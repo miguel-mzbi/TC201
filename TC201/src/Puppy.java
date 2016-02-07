@@ -30,8 +30,6 @@ class Puppy {
 		System.out.println(kassab.getAge()+" years");
 		kassab.run(10);
 		kassab.eat(10);
-		Puppy kassab2 = new Puppy(19, "Kassab2", 180);
-
 	}
 	
 
