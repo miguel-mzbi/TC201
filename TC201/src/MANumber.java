@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MANumber{
 	private int num;
-	int numOriginal;
+	private int numOriginal;
 	
 	public MANumber(int n){
 		this.numOriginal = n;
