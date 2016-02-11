@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class MANumber{
+public class MAEuclid{
 	private int num;
 	private int numOriginal;
 	private static Scanner scan;
 	
-	public MANumber(int n){
+	public MAEuclid(int n){
 		this.numOriginal = n;
 		this.num = n;
 	}
@@ -29,7 +29,7 @@ public class MANumber{
 
     public static void main(String[] args) {
     	scan = new Scanner(System.in);
-    	MANumber n84 = new MANumber(84);
+    	MAEuclid n84 = new MAEuclid(84);
     	
     	System.out.println("Enter a number: ");
     	
