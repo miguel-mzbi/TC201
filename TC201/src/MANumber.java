@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class MANumber{
 	private int num;
 	private int numOriginal;
+	private static Scanner scan;
 	
 	public MANumber(int n){
 		this.numOriginal = n;
@@ -27,7 +28,7 @@ public class MANumber{
     }
 
     public static void main(String[] args) {
-    	Scanner scan = new Scanner(System.in);
+    	scan = new Scanner(System.in);
     	MANumber n84 = new MANumber(84);
     	
     	System.out.println("Enter a number: ");
