@@ -8,7 +8,6 @@ public class MALych {
 		this.ayeLych = 0;
 		this.avastLych = 0;
 		this.naturalPalindrome = 0;
-		
 	}
 	
 	public void orderingLych(){
