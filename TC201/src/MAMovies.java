@@ -64,8 +64,8 @@ public class MAMovies {
 			ArrayList<String> actorsInMovies = new ArrayList<String>();
 			
 			for (int i = 0; i < this.moviesData.get(movie1).size(); i++ ){
-				if (this.moviesData.get(movie1).contains(this.moviesData.get(movie2).get(i))){
-					actorsInMovies.add(this.moviesData.get(movie2).get(i));
+				if (this.moviesData.get(movie2).contains(this.moviesData.get(movie1).get(i))){
+					actorsInMovies.add(this.moviesData.get(movie1).get(i));
 				}
 			}
 			
@@ -85,13 +85,13 @@ public class MAMovies {
 			ArrayList<String> actorsInMovies = new ArrayList<String>();
 			
 			for (int i = 0; i < this.moviesData.get(movie1).size(); i++ ){
-				if(!this.moviesData.get(movie1).contains(this.moviesData.get(movie2).get(i))){
-					actorsInMovies.add(this.moviesData.get(movie2).get(i));
+				if(!this.moviesData.get(movie2).contains(this.moviesData.get(movie1).get(i))){
+					actorsInMovies.add(this.moviesData.get(movie1).get(i));
 				}
 			}
 			for (int i = 0; i < this.moviesData.get(movie2).size(); i++ ){
-				if(!this.moviesData.get(movie2).contains(this.moviesData.get(movie1).get(i))){
-					actorsInMovies.add(this.moviesData.get(movie1).get(i));
+				if(!this.moviesData.get(movie1).contains(this.moviesData.get(movie2).get(i))){
+					actorsInMovies.add(this.moviesData.get(movie2).get(i));
 				}
 			}
 			
