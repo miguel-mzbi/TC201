@@ -15,7 +15,6 @@ public class MAMovies {
 		this.moviesData = new HashMap<String, ArrayList<String>>();
 	}
 	
-
 	public void readFile() throws FileNotFoundException{
 		scan = new Scanner(this.textFile);
 		
@@ -58,17 +57,14 @@ public class MAMovies {
 				System.out.print(s +", ");
 			}
 		}
+		
 		else if(moviesIn.contains("&")){
 			String movie1 = moviesIn.split("\\&")[0];
 			String movie2 = moviesIn.split("\\&")[1];
-			ArrayList<String> actorsInMovies = new ArrayList<String>();
 			
-			for (int i = 0; i < this.moviesData.get(movie1).size(); i++ ){
-				if (this.moviesData.get(movie2).contains(this.moviesData.get(movie1).get(i))){
-					actorsInMovies.add(this.moviesData.get(movie1).get(i));
-				}
-			}
-			
+			ArrayList<String> actorsInMovies = new ArrayList<String>(this.moviesData.get(movie1));
+			actorsInMovies.retainAll(this.moviesData.get(movie2));
+						
 			if (actorsInMovies.size() == 0){
 				System.out.println("None");
 			}
