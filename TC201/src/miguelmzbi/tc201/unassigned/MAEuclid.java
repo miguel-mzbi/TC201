@@ -1,3 +1,4 @@
+package miguelmzbi.tc201.unassigned;
 import java.util.Scanner;
 
 public class MAEuclid{

@@ -1,4 +1,4 @@
-package miguelmzbi.tc201.libray;
+package miguelmzbi.tc201.library;
 import java.util.ArrayList;
 
 public class MALibrary {

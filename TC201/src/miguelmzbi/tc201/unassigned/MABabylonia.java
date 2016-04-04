@@ -1,3 +1,4 @@
+package miguelmzbi.tc201.unassigned;
 
 public class MABabylonia {
 	private double number, guess, division, privGuess;

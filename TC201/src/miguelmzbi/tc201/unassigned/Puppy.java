@@ -1,3 +1,4 @@
+package miguelmzbi.tc201.unassigned;
 
 class Puppy {
 	private int age;

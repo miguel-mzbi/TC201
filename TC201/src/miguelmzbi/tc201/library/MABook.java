@@ -1,4 +1,4 @@
-package miguelmzbi.tc201.libray;
+package miguelmzbi.tc201.library;
 
 public class MABook {
 	String title;
